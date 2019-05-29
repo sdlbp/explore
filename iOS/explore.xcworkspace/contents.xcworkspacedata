@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Foundation.playground">
+   </FileRef>
+   <FileRef
       location = "group:UIKit_explore.playground">
    </FileRef>
 </Workspace>
