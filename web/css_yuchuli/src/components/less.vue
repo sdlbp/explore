@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="less">
   <span>关于less</span>
 </div>
 </template>
@@ -10,6 +10,11 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="less">
+  #less {
+    background-color: green;
+    span {
+      color: aqua;
+    }
+  }
 </style>
