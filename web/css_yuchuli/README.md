@@ -11,6 +11,8 @@
 
 # less
 
+## 依赖
+
 ```bash
 # 引入必要的依赖
 yarn add less less-loader -D
@@ -60,3 +62,14 @@ yarn add less less-loader -D
 
 
 
+# sass
+
+## 依赖
+
+```bash
+yarn add sass sass-loader node-sass -D
+```
+
+## 语法
+
+使用缩进的方式	
