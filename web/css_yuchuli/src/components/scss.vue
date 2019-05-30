@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <span>关于scss</span>
+  <div id="scss">
+    <p>关于scss</p>
+    <p>hello</p>
   </div>
 </template>
 
@@ -10,6 +11,13 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+#scss {
+  p:first-child {
+    color: green;
+  }
+  p:last-child {
+    color: aqua;
+  }
+}
 </style>

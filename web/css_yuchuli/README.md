@@ -73,3 +73,10 @@ yarn add sass sass-loader node-sass -D
 ## 语法
 
 使用缩进的方式	
+
+# scss
+
+脚手架默认支持css预处理语言
+
+可以直接使用不用安装依赖
+
