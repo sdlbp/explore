@@ -2,6 +2,12 @@
   <div id="scss">
     <p>关于scss</p>
     <p>hello</p>
+    <div class="se">
+      <p>mixin 单行溢出省略 mixin 单行溢出省略 mixin 单行溢出省略 mixin 单行溢出省略 mixin 单行溢出省略 mixin 单行溢出省略 </p>
+    </div>
+    <div class="mse">
+      <p>mixin多行溢出省略 mixin多行溢出省略 mixin多行溢出省略 mixin多行溢出省略 mixin多行溢出省略 mixin多行溢出省略 mixin多行溢出省略 mixin多行溢出省略 mixin多行溢出省略 </p>
+    </div>
   </div>
 </template>
 
@@ -12,12 +18,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import "../assets/mixin";
 #scss {
-  p:first-child {
-    color: green;
+  .se {
+    width: 300px;
+    p {
+      @include singleEllipsis
+    }
   }
-  p:last-child {
-    color: aqua;
+  .mse {
+    width: 300px;
+    height: 200px;
+    p {
+      @include mutableEllipsis(2)
+    }
   }
 }
 </style>

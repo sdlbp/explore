@@ -1,0 +1,17 @@
+// 单行溢出省略
+@mixin singleEllipsis () {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+// 多行溢出省略
+@mixin mutableEllipsis ($lines) {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: $lines;
+}

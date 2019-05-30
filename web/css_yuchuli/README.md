@@ -87,3 +87,25 @@ yarn add sass sass-loader node-sass -D
 因为先在sass分支中安装了必要的依赖,并且git忽略了`node_module` 所以切换到此分支的时候,可以直接编译运行
 
 scss 需要安装 `sass-loader` 和 `node-sass`
+
+## 语法
+
+### 变量
+
+使用 `$`开头
+
+### @mixin
+
+可以使用此指令来定义重复使用的样式
+
+```scss
+// 使用 @mixin 定义
+@mixin singleEllipsis () {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+// 使用 @include 引用
+@include singleEllipsis
+```
+
