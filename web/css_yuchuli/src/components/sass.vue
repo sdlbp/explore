@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <span>关于sass</span>
+  <div id="sass">
+    <p>关于sass</p>
+    <p>缩排语法</p>
   </div>
 </template>
 
@@ -10,6 +11,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="sass" scoped>
+#sass
+  p:first-child
+    color: red
+  p:last-child
+    color: green
 </style>
