@@ -1,21 +1,62 @@
-# css_yuchuli
+> May 30, 2019 11:54
+>
+> 在`vue init webpack`创建的脚手架工程中怎么引入`less`,`sacc`,`scss`
+>
+> 以及用来了解 less sass scss 
+>
+> 的工程
 
-> A Vue.js project
+[TOC]
+<!-- toc -->
 
-## Build Setup
+# less
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+```bash
+# 引入必要的依赖
+yarn add less less-loader -D
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+##  变量
+
+使用@定义,属性值中直接使用 @variables name 引用
+
+变量也可以使用在选择器,url,import语句中
+
+## Parent Selectors &
+
+代表父级选择器
+
+> 用于伪类
+>
+> &:after
+
+& 用于产生重复的类名	
+
+```less
+.button {
+  &-ok {
+    background-image: url("ok.png");
+  }
+  &-cancel {
+    background-image: url("cancel.png");
+  }
+
+  &-custom {
+    background-image: url("custom.png");
+  }
+}
+
+// result
+.button-ok {
+  background-image: url("ok.png");
+}
+.button-cancel {
+  background-image: url("cancel.png");
+}
+.button-custom {
+  background-image: url("custom.png");
+}
+```
+
+
+
