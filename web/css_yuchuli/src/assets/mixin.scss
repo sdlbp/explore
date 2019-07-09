@@ -15,3 +15,19 @@
   /* autoprefixer: on */
   -webkit-line-clamp: $lines;
 }
+
+// 布局相关 start
+
+//宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// 布局相关 end
+
+//字体大小，颜色
+@mixin sc($size, $color) {
+  font-size: $size;
+  color: $color;
+}
